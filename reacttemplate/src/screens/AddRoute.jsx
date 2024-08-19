@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
 import Navbar from '../components/navbar'
 import {Searchtrainbynumber} from '../services/Train'
+import Headerfooter from '../components/Headerfooter'
 function AddRoute()
 {
 
@@ -31,7 +32,9 @@ function AddRoute()
 
   return(
     <div>
+
     <Navbar/>
+    
     <h2 className='page-header'>Add Route</h2>
     <div className='row'>
       <div className='col'></div>

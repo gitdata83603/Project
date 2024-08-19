@@ -33,6 +33,7 @@ function Addstation()
 
   return(
 <div>
+
 <Navbar/>
 
 <h2 className='page-header'>Add Station</h2>

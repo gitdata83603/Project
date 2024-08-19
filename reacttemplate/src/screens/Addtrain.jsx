@@ -72,6 +72,7 @@ function Addtrain()
 
   return (
     <div>
+  
       <Navbar/>
     <div className="container mt-4">
       <h2>Add Train</h2>

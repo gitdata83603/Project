@@ -2,6 +2,8 @@ import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
 import { login } from '../services/admin'
+import Headerfooter from '../components/Headerfooter'
+import Footer from '../components/Footer'
 
 function Login() {
   const [email, setEmail] = useState('')
@@ -48,13 +50,17 @@ function Login() {
 
   return (
     <div>
+      <Headerfooter/>
+      <br/>
+      <br/>
+      <div className="container mt-4">
       <h2 className='page-header'>Login</h2>
-      <div className='row'>
+      <div className='row' style={{marginTop:'50px'}}>
         <div className='col'></div>
         <div className='col'>
           <div className='form'>
-            <div className='mb-3'>
-              <label htmlFor=''>Email</label>
+            <div className='mb-4'>
+              {/* <label htmlFor=''>Email</label> */}
               <input
                 onChange={(e) => {
                   if (e.target.value.length == 0) {
@@ -66,13 +72,14 @@ function Login() {
                 }}
                 type='email'
                 className='form-control'
+                placeholder='email'
               />
               {isEmailEmpty && (
                 <p style={{ color: 'red' }}>Email is mandatory</p>
               )}
             </div>
-            <div className='mb-3'>
-              <label htmlFor=''>Password</label>
+            <div className='mb-4'>
+              {/* <label htmlFor=''>Password</label> */}
               <input
                 onChange={(e) => {
                   if (e.target.value.length == 0) {
@@ -84,6 +91,7 @@ function Login() {
                 }}
                 type='password'
                 className='form-control'
+                placeholder='password'
               />
               {isPasswordEmpty && (
                 <p style={{ color: 'red' }}>Password is mandatory</p>
@@ -100,6 +108,7 @@ function Login() {
           </div>
         </div>
         <div className='col'></div>
+      </div>
       </div>
     </div>
   )

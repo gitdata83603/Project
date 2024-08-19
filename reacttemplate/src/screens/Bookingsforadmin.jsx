@@ -5,7 +5,7 @@ import { toast } from 'react-toastify'
 import {getTrainDetails} from '../services/Train'
 import {Searchtrainbynumber} from '../services/Train'
 import React from 'react';
-
+import Headerfooter from '../components/Headerfooter'
 
 function Bookingsforadmin() {
     
@@ -33,6 +33,7 @@ const onSave = async () => {
 
   return(
       <div>
+       
           <Navbar/>
         <h2 className='page-header'>See Bookings</h2>
         <div className='row'>

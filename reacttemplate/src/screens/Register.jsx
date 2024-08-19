@@ -4,6 +4,8 @@ import { Link, useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
 import { useLocation } from "react-router-dom"
 import {registeruser} from '../services/admin'
+import Headerfooter from '../components/Headerfooter'
+import Footer from '../components/Footer'
 
 function Register()
 {
@@ -59,6 +61,7 @@ const onSave = async () => {
 
     return(
         <div>
+          <Headerfooter/>
         <h2 className='page-header'>Register</h2>
             <div className='row'>
             <div className='col'></div>
@@ -126,6 +129,7 @@ const onSave = async () => {
             </div>
             <div className='col'></div>
             </div>
+          
          </div>
     )
 }

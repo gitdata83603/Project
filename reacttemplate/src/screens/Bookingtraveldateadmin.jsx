@@ -6,6 +6,7 @@ import {getTrainDetails} from '../services/Train'
 import {loadtraintraveldates} from '../services/Train'
 import React from 'react';
 import Trainsimple from '../components/Trainsimple'
+import Headerfooter from '../components/Headerfooter'
 function Bookingtraveldateadmin() {
     
 
@@ -46,6 +47,7 @@ function loadonetrain(travleid,startDate) {
 
  return(
      <div>
+        
         <Navbar/>
         <h2 className='page-header' style={{marginTop:'20px'}}>Train Booking Details</h2>
         <Trainsimple trainnumber={location.state.id}/>

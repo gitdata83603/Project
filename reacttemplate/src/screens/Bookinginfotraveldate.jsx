@@ -42,6 +42,7 @@ function Bookinginfotraveldate() {
 
     return(
         <div>
+        
             <Navbar/>
             <h2 className='page-header' style={{marginTop:'20px'}}> Booking Details</h2>
             <Trainsimple trainnumber={location.state.trainnumber}/>
